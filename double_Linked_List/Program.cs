@@ -136,6 +136,24 @@ namespace double_linked_list
                     Console.Write(currentNode.noMhs + "" + currentNode.name + "\n");
             }
         }
+        
+        public void descending()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList Is Empty");
+            else
+            {
+                Console.WriteLine("\n Record in the descending order of" + "roll number are:\n");
+                Node currentNode;
+                for(currentNode = START; currentNode !=null; currentNode = currentNode.next) { }
+
+                while(currentNode != null)
+                {
+                    Console.Write(currentNode.noMhs + "" + currentNode.name + "\n");
+                    currentNode = currentNode.prev;
+                }
+            }
+        }
     }
 
     internal class Program
